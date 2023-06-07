@@ -1,1 +1,34 @@
+.app {
+    display: flex;
+    padding: 1rem;
+}
 
+ul {
+    list-style-type: none;
+    width: fit-content;
+    padding: 0;
+    margin: 0 2rem 0 0;
+}
+
+ul li {
+    cursor: pointer;
+}
+
+ul li.active {
+    background-color: blue;
+    color: white;
+}
+
+ul li, .details div {
+    border: 1px solid grey;
+    padding: 1rem;
+}
+
+ul li:not(:last-child), .details div:not(:last-child) {
+    border-bottom: none;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
